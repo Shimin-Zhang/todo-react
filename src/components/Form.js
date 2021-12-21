@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { buttonStyle } from '../style/style.css.ts';
 
 function Form(props) {
   const [name, setName] = useState('');
@@ -35,7 +36,7 @@ function Form(props) {
         value={name}
         onChange={handleChange}
       />
-      <button type="submit" className="btn btn__primary btn__lg">
+      <button type="submit" className={buttonStyle}>
         Add
       </button>
     </form>
